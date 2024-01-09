@@ -3,7 +3,7 @@ import special2 from "public/assets/special2.png";
 import special3 from "public/assets/special3.png";
 import special4 from "public/assets/special4.png";
 import star from "public/assets/star.svg";
-import blackStar from "public/assets/star-black.svg";
+import blackStar from "public/assets/starblack.svg";
 
 export const navLinks = [
   {
@@ -50,7 +50,7 @@ export const specialData = [
     imgurl: special3,
     name: "Spaghetti",
     label: "Indulge in the timeless classic of Spaghetti — al dente pasta draped in rich tomato sauce, topped with grated Parmesan. A comforting, flavorful delight awaits!",
-    rating: [{ star }, { star }, { star }, { star }, { blackStar }],
+    rating: [{ star }, { star }, { star }, { star }, { star }],
   },
   {
     imgurl: special4,
