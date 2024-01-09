@@ -3,7 +3,7 @@ import special2 from "public/assets/special2.png";
 import special3 from "public/assets/special3.png";
 import special4 from "public/assets/special4.png";
 import star from "public/assets/star.svg";
-import blackStar from "public/assets/starblack.svg";
+import blackStar from "public/assets/Starblack.svg";
 
 export const navLinks = [
   {
