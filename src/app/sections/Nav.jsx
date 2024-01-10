@@ -3,7 +3,6 @@ import { useState } from "react";
 import { navLinks } from "@app/constants/data";
 import Image from "next/image";
 import logo from "public/assets/logo.svg";
-import { AiOutlineAlignRight } from "react-icons/ai";
 import { AiOutlineAlignLeft } from "react-icons/ai";
 import { IoClose } from "react-icons/io5";
 
@@ -11,7 +10,7 @@ const Nav = () => {
   const [toggleMenu, settoggleMenu] = useState(false);
   return (
     <nav className="*:text-white *:font-inter relative flex  justify-end  bg-grey max-lg:h-[65px] py-5 lg:px-16 items-center w-full">
-      <div className="absolute left-[20px] lg:left-10 top-0 max-sm:top-2">
+      <div className="absolute left-[20px] lg:left-10 top-0 max-sm:top-2 z-10">
         <Image src={logo} alt="logo" className="w-[60px] sm:w-[70px] xl:w-[95px] lg:w-[80px]" />
       </div>
 
@@ -37,7 +36,7 @@ const Nav = () => {
 
       {/* Mobile Nav */}
 
-      <section className="lg:hidden flex justify-center items-center">
+      <section className="lg:hidden flex justify-center items-center z-50 ">
         {toggleMenu ? (
           <IoClose size={30} color="#FF9F0F" onClick={() => settoggleMenu(false)} className="absolute top-4 right-[10px]" />
         ) : (
@@ -50,14 +49,14 @@ const Nav = () => {
               {navLinks.map((items) => (
                 <ul key={items.id} className="">
                   <li className="flex border-b border-gray-50 px-4 py-1 last:mb-4">
-                    <a href={items.link} className="text-[14px] hover:text-gold hover:font-medium hover:border-b border-accentRed transition-all text-left leading-[24px] font-bold">
+                    <a href={items.link} className="text-[14px] hover:text-gold hover:border-b border-accentRed transition-all text-left leading-[24px] font-bold">
                       {items.name}
                     </a>
                   </li>
                 </ul>
               ))}
               <a href="#" className="bg-accentRed py-[6px] px-5 rounded nav backdrop-blur-[2px] group hover:scale-105 hover:bg-yellow transition-all  mx-4 text-center">
-                <button type="button" className="text-[14px] leading-[24px] font-bold group-hover:text-black ">
+                <button type="button" className="text-[14px] leading-[24px] font-bold group-hover:text-black border-none outline-none">
                   Sign In
                 </button>
               </a>

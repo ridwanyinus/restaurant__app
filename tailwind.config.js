@@ -12,7 +12,7 @@ module.exports = {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         display: ["DM Serif Display", "serif"],
-        sans: ["DM Sans", " sans - serif"],
+        sans: ["DM Sans", " sans-serif"],
         cinzel: ["Cinzel", "serif"],
       },
 
