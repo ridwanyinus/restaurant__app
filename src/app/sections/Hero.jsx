@@ -2,7 +2,7 @@
 
 const Hero = () => {
   return (
-    <main id="hero" className="bg-[url(/assets/herobg.png)] w-full bg-no-repeat  bg-center bg-cover relative h-screen xs:h-full py-16 xs:py-28">
+    <main id="hero" className="bg-[url(/assets/herobg.png)] w-full bg-no-repeat  bg-center bg-contain xs:bg-cover relative h-screen xs:h-full py-16 xs:py-28">
       <div className="relative z-10 flex flex-col justify-center items-center">
         <h2 className="taste text-yellow font-display text-center leading-none text-3xl xs:text-4xl sm:text-[40px] md:text-5xl xl:text-6xl  widescreen:text-[65px] pb-12 lg:pb-12 w-full">
           Taste the rich flavour of <span className="max-lg:block mt-2 xs:mt-1 sm:mt-2 "> high quality meals</span>
