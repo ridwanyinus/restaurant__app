@@ -8,7 +8,7 @@ import Dining from "./sections/Dining";
 
 export default function Home() {
   return (
-    <section>
+    <section className="relative">
       <Nav />
       <Hero />
       <SpecialMenu />
