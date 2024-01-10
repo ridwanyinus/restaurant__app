@@ -2,12 +2,12 @@
 
 const Hero = () => {
   return (
-    <main id="hero" className="bg-[url(/assets/herobg.png)] w-full  bg-center bg-cover relative h-full py-16 xs:py-28">
+    <main id="hero" className="bg-[url(/assets/herobg.png)] w-full bg-no-repeat  bg-center bg-cover relative h-[80vh]xs:h-full py-16 xs:py-28">
       <div className="relative z-10 flex flex-col justify-center items-center">
-        <h2 className="taste text-yellow font-display text-center leading-none text-3xl xs:text-4xl sm:text-[40px] md:text-5xl xl:text-6xl  widescreen:text-[65px] pb-12 lg:pb-10 w-full">
+        <h2 className="taste text-yellow font-display text-center leading-none text-3xl xs:text-4xl sm:text-[40px] md:text-5xl xl:text-6xl  widescreen:text-[65px] pb-12 lg:pb-12 w-full">
           Taste the rich flavour of <span className="max-lg:block mt-2 xs:mt-1 sm:mt-2 "> high quality meals</span>
         </h2>
-        <p className="text-white font-sans text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[45px] pb-12 lg:pb-10 w-[85vw] xs:w-[72vw] sm:w-[65vw] lg:w-[62vw] leading-normal font-normal text-center">
+        <p className="text-white font-sans text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[45px] pb-12 lg:pb-12 w-[85vw] xs:w-[72vw] sm:w-[65vw] lg:w-[62vw] leading-normal xl:leading-[50px] font-normal text-center">
           We only use the five star quality for our menu, come and get the richness in every meals we serve.
         </p>
 
