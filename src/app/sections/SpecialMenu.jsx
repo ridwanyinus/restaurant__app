@@ -5,7 +5,7 @@ import arrow2 from "public/assets/arrow2.png";
 import Image from "next/image";
 const SpecialMenu = () => {
   return (
-    <main id="specialMenu" className="py-12 relative w-full h-full">
+    <main id="specialMenu" className="max-lg:py-24 py-12 relative w-full h-full">
       {/* <Image src={arrow1} alt="arrow1" color="#fff" width={300} className="absolute " /> */}
       <div className="text-center">
         <h2 className="text-yellow ">Today's Special</h2>
