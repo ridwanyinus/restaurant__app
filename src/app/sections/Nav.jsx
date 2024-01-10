@@ -9,7 +9,7 @@ import { IoClose } from "react-icons/io5";
 const Nav = () => {
   const [toggleMenu, settoggleMenu] = useState(false);
   return (
-    <nav className="*:text-white *:font-inter relative flex  justify-end  bg-grey max-lg:h-[65px] py-5 lg:px-16 items-center w-full">
+    <nav className="max-lg:fixed *:text-white *:font-inter z-50 flex  justify-end  bg-grey max-lg:h-[65px] py-5 lg:px-16 items-center w-full">
       <div className="absolute left-[20px] lg:left-10 top-0 max-sm:top-2 z-10">
         <Image src={logo} alt="logo" className="w-[60px] sm:w-[70px] xl:w-[95px] lg:w-[80px]" />
       </div>
