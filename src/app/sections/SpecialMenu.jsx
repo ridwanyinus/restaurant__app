@@ -7,8 +7,8 @@ import Image from "next/image";
 const SpecialMenu = () => {
   return (
     <main id="specialMenu" className="pt-24  relative w-full h-full mx-auto">
-      <Image src={arrow1} alt="arrow1" color="#fff" width={300} className="absolute max-lg:hidden left-10 lg:top-16 xl:top-28" />
-      <Image src={arrow2} alt="arrow1" color="#fff" width={300} className="absolute  max-xl:hidden  lg:-top-1 xl:top-5 lg:-right-3 xl:right-7" />
+      <Image src={arrow1} alt="arrow1" color="#fff" width={300} className="absolute max-lg:hidden left-10 lg:top-16 xl:top-28 object-cover" />
+      <Image src={arrow2} alt="arrow1" color="#fff" width={300} className="absolute  max-xl:hidden  lg:-top-1 xl:top-5 lg:-right-3 xl:right-7 object-cover" />
 
       <div className="text-center mb-20 lg:mb-24 xl:32">
         <h2 className="text-yellow text-3xl xs:text-4xl sm:text-[40px]  md:text-5xl xl:text-6xl 2xl:text-[65px] font-display leading-normal mb-8 xs:mb-12 sm:mb-16 lg:mb-12 ">Today's Special</h2>
@@ -22,7 +22,7 @@ const SpecialMenu = () => {
           {specialData.map((items) => (
             <div className="lg:flex-1  xl:py-8 max-xs:pl-8" key={items.id}>
               <a href="#" className=" w-[50vw] xs:w-[35vw] sm:w-[35vw]  lg:w-[200px] xl:w-[250px] xl:h-[200px] block  group rounded-lg">
-                <Image src={items.imgurl} alt={items.name} quality={100} placeholder="blur" className=" w-full lg:w-auto h-auto group-hover:brightness-125 transition-all " />
+                <Image src={items.imgurl} alt={items.name} quality={100} placeholder="blur" className=" w-full lg:w-auto h-auto group-hover:brightness-125 transition-all object-cover " />
               </a>
 
               <h3 className="text-white xs:text-base md:text-lg lg:text-xl font-sans  font-medium py-5 h-fit leading-none">{items.name}</h3>
@@ -45,7 +45,7 @@ const SpecialMenu = () => {
         </div>
       </section>
       <div className="mt-24 w-full">
-        <Image src={specialbg} />
+        <Image src={specialbg} className="object-cover max-xs:h-[120px]" />
       </div>
     </main>
   );

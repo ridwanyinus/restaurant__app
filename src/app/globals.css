@@ -59,9 +59,33 @@
   background: linear-gradient(180deg, rgba(10, 10, 10, 0) 0%, #000 100%);
 }
 
-
+.linear::after {
+  background: linear-gradient(90deg, #000 55%, rgba(0, 0, 0, 0) 100%);
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  bottom: 0px;
+  left: 0;
+  overflow: hidden;
+}
+.linear2::after {
+  background: linear-gradient(30deg, #000 55%, rgba(0, 0, 0, 0) 100%);
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  bottom: 0px;
+  right: 0px;
+  overflow: hidden;
+}
 
 /* MEDIA QUERY */
+@media screen and (max-width: 380px) {
+  .linear::after {
+    width: 50%;
+  }
+}
 @media screen and (max-width: 343px) {
   .taste {
     font-size: 24px;

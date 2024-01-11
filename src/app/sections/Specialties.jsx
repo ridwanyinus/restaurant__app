@@ -22,16 +22,16 @@ const Specialties = () => {
             </button>
           </a>
         ))}
-        </div>
-        
+      </div>
+
       <section className="relative w-full h-full mt-14 xs:mt-16 space-y-6 xs:space-y-10 sm:mt-24 sm:space-y-16  lg:pt-36 md:space-y-20 lg:space-y-32">
         <div className="absolute  top-0 w-full h-full inset-0">
-          <Image src={specialtiesbg} alt="bg" className="w-full h-full xl:h-full" />
+          <Image src={specialtiesbg} alt="bg" className="w-full h-full xl:h-full object-cover" />
         </div>
 
         <div className="flex justify-between gap-x-8 xs:gap-x-12 sm:gap-x-16 md:gap-x-24 xl:gap-x-0 relative  px-4  sm:px-16 items-center max-xs:mb-4 ">
           <div className="max-xl:flex-1 max-xs:w-[30vw]">
-            <Image src={specialties1} quality={100} placeholder="blur" className=" xl:w-[588px]" />
+            <Image src={specialties1} quality={100} placeholder="blur" className=" xl:w-[588px] object-cover" />
           </div>
 
           <div className="xs:space-y-1 space-y-3 md:space-y-5 max-xl:flex-1">
@@ -44,7 +44,7 @@ const Specialties = () => {
         </div>
         <div className="flex justify-between flex-row-reverse gap-x-8 xs:gap-x-12 sm:gap-x-16 md:gap-x-24 xl:gap-x-0 relative  px-4  sm:px-16 items-center">
           <div className="max-xl:flex-1 max-xs:w-[30vw]">
-            <Image src={specialties2} quality={100} placeholder="blur" className=" xl:w-[588px]" />
+            <Image src={specialties2} quality={100} placeholder="blur" className=" xl:w-[588px] object-cover" />
           </div>
 
           <div className="xs:space-y-1 space-y-3 md:space-y-5 max-xl:flex-1">
@@ -58,7 +58,7 @@ const Specialties = () => {
 
         <div className="flex justify-between gap-x-8 xs:gap-x-12 sm:gap-x-16 md:gap-x-24 xl:gap-x-0 relative  px-4  sm:px-16 items-center">
           <div className="max-xl:flex-1 max-xs:w-[30vw]">
-            <Image src={specialties3} quality={100} placeholder="blur" className=" xl:w-[588px]" />
+            <Image src={specialties3} quality={100} placeholder="blur" className=" xl:w-[588px]object-cover" />
           </div>
 
           <div className="xs:space-y-1 space-y-3 md:space-y-5 max-xl:flex-1">
