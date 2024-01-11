@@ -6,11 +6,11 @@ import specialbg from "public/assets/specialbg.png";
 import Image from "next/image";
 const SpecialMenu = () => {
   return (
-    <main id="specialMenu" className="pt-24 relative w-full h-full mx-auto">
+    <main id="specialMenu" className="pt-24  relative w-full h-full mx-auto">
       <Image src={arrow1} alt="arrow1" color="#fff" width={300} className="absolute max-lg:hidden left-10 lg:top-16 xl:top-28" />
       <Image src={arrow2} alt="arrow1" color="#fff" width={300} className="absolute  max-xl:hidden  lg:-top-1 xl:top-5 lg:-right-3 xl:right-7" />
 
-      <div className="text-center mb-20 lg:mb-24 xl:mb-44">
+      <div className="text-center mb-20 lg:mb-24 xl:32">
         <h2 className="text-yellow text-3xl xs:text-4xl sm:text-[40px]  md:text-5xl xl:text-6xl 2xl:text-[65px] font-display leading-normal mb-8 xs:mb-12 sm:mb-16 lg:mb-12 ">Today's Special</h2>
         <p className="max-sm:px-6 text-white font-sans xs:text-xl sm:text-2xl md:text-3xl xl:text-[40px]  2xl:text-[45px] ">
           Special menu oftenly comes different everyday,<span className="sm:block mt-2 md:mt-4"> this is our special food for today</span>
@@ -28,7 +28,7 @@ const SpecialMenu = () => {
               <h3 className="text-white xs:text-base md:text-lg lg:text-xl font-sans  font-medium py-5 h-fit leading-none">{items.name}</h3>
               <p className="text-white text-[15px] font-sans w-[80%] xs:w-[88%] sm:w-[85%] lg:w-[90%] ">{items.label}</p>
 
-              <div className="inline-flex justify-start items-start mt-5 space-x-2">
+              <div className="inline-flex justify-start items-start mt-5  space-x-2">
                 {items.rating.map((rates) => (
                   <a href="#" className="inline-flex ">
                     <Image src={rates.star} className="w-[20px] lg:w-[25px] widescreen:w-[30px]" />
@@ -44,7 +44,7 @@ const SpecialMenu = () => {
           ))}
         </div>
       </section>
-      <div className="mt-24">
+      <div className="mt-24 w-full">
         <Image src={specialbg} />
       </div>
     </main>

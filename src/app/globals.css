@@ -59,9 +59,11 @@
   background: linear-gradient(180deg, rgba(10, 10, 10, 0) 0%, #000 100%);
 }
 
+
+
 /* MEDIA QUERY */
 @media screen and (max-width: 343px) {
-.taste{
-  font-size: 24px;
-}
+  .taste {
+    font-size: 24px;
+  }
 }

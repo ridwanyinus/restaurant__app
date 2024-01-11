@@ -5,13 +5,15 @@ import SpecialMenu from "./sections/SpecialMenu";
 import Story from "./sections/Story";
 import Footer from "./sections/Footer";
 import Dining from "./sections/Dining";
+import Specialties from "./sections/Specialties";
 
 export default function Home() {
   return (
-    <section >
+    <section>
       <Nav />
       <Hero />
       <SpecialMenu />
+      <Specialties />
       <Story />
       <Footer />
       <Dining />

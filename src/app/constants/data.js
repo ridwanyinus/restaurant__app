@@ -63,3 +63,12 @@ export const specialData = [
     id: 4,
   },
 ];
+
+export const specialties = [
+  { name: "Specialities", id: "1" },
+  { name: "Homestyle Sushi", id: "2" },
+  { name: "Steak", id: "3" },
+  { name: "With Rice", id: "4" },
+  { name: "Cocktails", id: "5" },
+  { name: "Appetizer", id: "6" },
+];
