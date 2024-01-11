@@ -14,9 +14,9 @@ export default function Home() {
       <Hero />
       <SpecialMenu />
       <Specialties />
+      <Dining />
       <Story />
       <Footer />
-      <Dining />
     </section>
   );
 }

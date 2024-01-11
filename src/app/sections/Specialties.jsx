@@ -6,7 +6,7 @@ import specialties3 from "public/assets/specialties3.png";
 import specialtiesbg from "public/assets/specialtiesbg.png";
 const Specialties = () => {
   return (
-    <main className="py-24">
+    <main className="pt-24">
       <h2 className="text-yellow text-3xl xs:text-4xl sm:text-[40px]  md:text-5xl xl:text-6xl 2xl:text-[65px] font-display leading-normal mb-8 xs:mb-12 sm:mb-16 lg:mb-12 text-center">
         Our Specialities
       </h2>
@@ -24,7 +24,7 @@ const Specialties = () => {
         ))}
         </div>
         
-      <section className="relative w-full h-full mt-14 xs:mt-16 space-y-6 xs:space-y-10 sm:mt-24 sm:space-y-16  lg:py-36 md:space-y-20 lg:space-y-32">
+      <section className="relative w-full h-full mt-14 xs:mt-16 space-y-6 xs:space-y-10 sm:mt-24 sm:space-y-16  lg:pt-36 md:space-y-20 lg:space-y-32">
         <div className="absolute  top-0 w-full h-full inset-0">
           <Image src={specialtiesbg} alt="bg" className="w-full h-full xl:h-full" />
         </div>

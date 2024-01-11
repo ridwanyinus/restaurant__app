@@ -1,7 +1,7 @@
 
 const Dining = () => {
   return (
-    <div>Dining</div>
+    <section className="">Dining</section>
   )
 }
 
