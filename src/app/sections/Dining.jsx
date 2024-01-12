@@ -31,7 +31,7 @@ const Dining = () => {
             <p className="text-xs xs:text-base lg:text-lg xl:text-xl 2xl:text-[28px] leading-normal font-sans xs:w-[85%] sm:w-[70%]">Bottle of Champagne Fine Sushi Tower For 2+ Dessert</p>
           </div>
 
-          <div className="relative right-0 flex justify-end h-[110px] xs:h-[120px] sm:h-[150px] md:h-[200px] lg:h-[250px] linear">
+          <div className="relative left-0 flex justify-end h-[110px] xs:h-[120px] sm:h-[150px] md:h-[200px] lg:h-[250px] linear">
             <Image src={dining1} alt="dining" quality={100} className="w-[65%] xs:w-[75%] sm:w-[80%] object-cover" />
             <p className="text-yellow font-display absolute bottom-0 left-[5%] z-10 text-2xl xs:text-3xl sm:text-4xl   md:text-4xl xl:text-6xl 2xl:text-[65px]">$500</p>
           </div>
