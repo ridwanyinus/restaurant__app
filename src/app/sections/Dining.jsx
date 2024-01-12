@@ -27,7 +27,7 @@ const Dining = () => {
       <main className="pt-12 xs:pt-16 lg:pt-24  sm:px-4 md:px-6 lg:px-12 w-full h-full space-y-12 xs:space-y-16  sm:space-y-24 lg:space-y-28 xl:space-y-32">
         <div className="flex justify-end w-full max-sm:pl-3">
           <div className="*:text-white space-y-5">
-            <p className="font-display text-3xl xs:text-4xl sm:text-[40px] md:text-5xl xl:text-6xl 2xl:text-[65px]">Fine Dining</p>
+            <p className="font-display text-[25px] xs:text-4xl sm:text-[40px] md:text-5xl xl:text-6xl 2xl:text-[65px]">Fine Dining</p>
             <p className="text-xs xs:text-base lg:text-lg xl:text-xl 2xl:text-[28px] leading-normal font-sans xs:w-[85%] sm:w-[70%]">Bottle of Champagne Fine Sushi Tower For 2+ Dessert</p>
           </div>
 
@@ -40,19 +40,19 @@ const Dining = () => {
         <div className="flex w-full pr-3  xs:px-3 lg:px-0 md:space-x-3 lg:space-x-0 items-start">
           <div className="relative right-0 flex  justify-start h-[110px] xs:h-[120px] sm:h-[150px] md:h-[200px] lg:h-[250px] linear2 ">
             <Image src={dining2} alt="dining" quality={100} className="w-[95%] xs:w-[100%] sm:w-[100%] object-cover" />
-            <p className="text-yellow font-display absolute bottom-0 -right-[1%] xs:-right-[15%] sm:-right-[10%]  md:-right-[5%] z-10 text-2xl xs:text-3xl sm:text-4xl   md:text-4xl xl:text-6xl 2xl:text-[65px]">
+            <p className="text-yellow font-display absolute bottom-0 right-0 xs:-right-[15%] sm:-right-[10%]  md:-right-[5%] z-10 text-2xl xs:text-3xl sm:text-4xl   md:text-4xl xl:text-6xl 2xl:text-[65px]">
               $1000
             </p>
           </div>
           <div className="*:text-white space-y-5 flex flex-col justify-start items-end">
-            <p className="font-display text-3xl xs:text-4xl sm:text-[40px] md:text-5xl xl:text-6xl 2xl:text-[65px]">Gold Dining</p>
+            <p className="font-display text-[25px] xs:text-4xl sm:text-[40px] md:text-5xl xl:text-6xl 2xl:text-[65px]">Gold Dining</p>
             <p className="text-xs xs:text-base lg:text-lg xl:text-xl 2xl:text-[28px] leading-normal font-sans xs:w-[75%] lg:w-[60%] text-right">Bottle of Champagne Secret Menu Sushi For 2+ Dessert</p>
           </div>
         </div>
 
         <div className="flex justify-end w-full max-sm:pl-3">
           <div className="*:text-white space-y-5">
-            <p className="font-display text-3xl xs:text-4xl sm:text-[40px] md:text-5xl xl:text-6xl 2xl:text-[65px] w-full">Royal Dining</p>
+            <p className="font-display text-[25px] xs:text-4xl sm:text-[40px] md:text-5xl xl:text-6xl 2xl:text-[65px] w-full">Royal Dining</p>
             <p className="text-xs xs:text-base lg:text-lg xl:text-xl 2xl:text-[28px] leading-normal font-sans xs:w-[85%] sm:w-[70%]">
               Bottle of Luxury Champagne Special Menu Sushi For 2+ Royal Dessert
             </p>
