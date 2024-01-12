@@ -36,7 +36,7 @@ export const navLinks = [
 export const specialData = [
   {
     imgurl: special1,
-    name: "Spinach & Mushroom Quiche",
+    name: "Spinach & Mushroom",
     label: "Indulge in Spinach & Mushroom Quiche: buttery crust, savory filling, golden cheese crown a symphony of flavors in each bite!",
     rating: [{ star }, { star }, { star }, { star }, { star }],
     id: 1,
@@ -51,14 +51,14 @@ export const specialData = [
   {
     imgurl: special3,
     name: "Spaghetti",
-    label: "Savor Spaghetti: al dente pasta in rich tomato sauce, crowned with Parmesan. A comforting, flavorful classic in every indulgent bite, delighting your senses!",
+    label: "Indulge in Spinach & Mushroom Quiche: buttery crust, savory filling, golden cheese crown a symphony of flavors in each bite!",
     rating: [{ star }, { star }, { star }, { star }, { star }],
     id: 3,
   },
   {
     imgurl: special4,
     name: "Chickpea Curry",
-    label: "Savor Chickpea Curry: tender chickpeas, aromatic spices, and rich tomato sauce create a hearty, flavorful dish, elevating your dining experience!",
+    label: "SSavor Roasted Sweet Potatoes cubed, seasoned, oven-baked to golden perfection. A flavorful, nutritious delight in every bite!",
     rating: [{ star }, { star }, { star }, { star }],
     id: 4,
   },

@@ -1,14 +1,17 @@
 "use client";
+import { useRef } from "react";
+import { useIsVisible } from "@app/Components/useIsVisible";
 import { specialData } from "@app/constants/data";
 import arrow1 from "public/assets/arrow1.png";
 import arrow2 from "public/assets/Vector.png";
-import specialbg from "public/assets/specialbg.png";
 import Image from "next/image";
 const SpecialMenu = () => {
+  const ref2 = useRef();
+  const isVisible2 = useIsVisible(ref2);
   return (
-    <main id="specialMenu" className="pt-24  relative w-full h-full mx-auto">
+    <main id="specialMenu" ref={ref2} className={`pt-24  relative w-full h-full mx-auto transition-opacity ease-in duration-700 ${isVisible2 ? "opacity-100" : "opacity-0"}`}>
       <Image src={arrow1} alt="arrow1" color="#fff" width={300} className="absolute max-lg:hidden left-10 lg:top-16 xl:top-28 object-cover" />
-      <Image src={arrow2} alt="arrow1" color="#fff" width={300} className="absolute  max-xl:hidden  lg:-top-1 xl:top-5 lg:-right-3 xl:right-7 object-cover" />
+      <Image src={arrow2} alt="arrow1" color="#fff" width={300} className="absolute  max-xl:hidden  lg:-top-1 xl:top-10 lg:-right-3 xl:right-7 object-cover" />
 
       <div className="text-center mb-20 lg:mb-24 xl:32">
         <h2 className="text-yellow text-3xl xs:text-4xl sm:text-[40px]  md:text-5xl xl:text-6xl 2xl:text-[65px] font-display leading-normal mb-8 xs:mb-12 sm:mb-16 lg:mb-12 ">Today's Special</h2>
@@ -21,7 +24,7 @@ const SpecialMenu = () => {
         <div className="max-lg:grid xs:grid-cols-2   flex xs:w-[90%] sm:w-[85%] lg:w-full justify-center items-start md:px-6 lg:px-12 h-full md:gap-x-8 lg:space-x-3 max-lg:gap-y-16 mx-auto">
           {specialData.map((items) => (
             <div className="lg:flex-1  xl:py-8 max-xs:pl-8" key={items.id}>
-              <a href="#" className=" w-[50vw] xs:w-[35vw] sm:w-[35vw]  lg:w-[200px] xl:w-[250px] xl:h-[200px] block  group rounded-lg">
+              <a href="#" className=" w-[50vw] xs:w-[35vw] sm:w-[35vw]  lg:w-[200px] xl:w-[260px] widescreen:w-[270px] 2xl:h-[200px] block  group rounded-lg">
                 <Image src={items.imgurl} alt={items.name} quality={100} placeholder="blur" className=" w-full lg:w-auto h-auto group-hover:brightness-125 transition-all object-cover " />
               </a>
 
@@ -44,9 +47,7 @@ const SpecialMenu = () => {
           ))}
         </div>
       </section>
-      <div className="mt-24 w-full">
-        <Image src={specialbg} className="object-cover max-xs:h-[120px]" />
-      </div>
+      
     </main>
   );
 };

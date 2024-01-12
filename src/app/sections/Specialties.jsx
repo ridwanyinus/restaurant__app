@@ -1,12 +1,23 @@
+"use client";
+import { useRef } from "react";
+import { useIsVisible } from "@app/Components/useIsVisible";
+
 import { specialties } from "@app/constants/data";
 import Image from "next/image";
 import specialties1 from "public/assets/specialties1.png";
 import specialties2 from "public/assets/specialties2.png";
 import specialties3 from "public/assets/specialties3.png";
 import specialtiesbg from "public/assets/specialtiesbg.png";
+import specialbg from "public/assets/specialbg.png";
+
 const Specialties = () => {
+   const ref3 = useRef();
+   const isVisible3 = useIsVisible(ref3);
   return (
-    <main className="pt-24">
+    <main ref={ref3} className={`pt-24 transition-opacity ease-in duration-700 ${isVisible3 ? "opacity-100" : "opacity-0"} `}>
+      <div className="mb-24 w-full">
+        <Image src={specialbg} className="object-cover max-xs:h-[120px]" />
+      </div>
       <h2 className="text-yellow text-3xl xs:text-4xl sm:text-[40px]  md:text-5xl xl:text-6xl 2xl:text-[65px] font-display leading-normal mb-8 xs:mb-12 sm:mb-16 lg:mb-12 text-center">
         Our Specialities
       </h2>
@@ -58,7 +69,7 @@ const Specialties = () => {
 
         <div className="flex justify-between gap-x-8 xs:gap-x-12 sm:gap-x-16 md:gap-x-24 xl:gap-x-0 relative  px-4  sm:px-16 items-center">
           <div className="max-xl:flex-1 max-xs:w-[30vw]">
-            <Image src={specialties3} quality={100} placeholder="blur" className=" xl:w-[588px]object-cover" />
+            <Image src={specialties3} quality={100} placeholder="blur" className=" xl:w-[588px] object-cover" />
           </div>
 
           <div className="xs:space-y-1 space-y-3 md:space-y-5 max-xl:flex-1">

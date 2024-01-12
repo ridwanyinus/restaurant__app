@@ -1,8 +1,14 @@
+"use client";
+import { useRef } from "react";
+import { useIsVisible } from "@app/Components/useIsVisible";
+
 import Image from "next/image";
 import story from "public/assets/story.png";
 const Story = () => {
+  const ref5 = useRef();
+  const isVisible5 = useIsVisible(ref5);
   return (
-    <section className="py-24">
+    <section ref={ref5} className={`pt-24 transition-opacity ease-in duration-700 ${isVisible5 ? "opacity-100" : "opacity-0"}`}>
       <h2 className="text-yellow text-3xl xs:text-4xl sm:text-[40px]  md:text-5xl xl:text-6xl 2xl:text-[65px] font-display leading-normal mb-5  lg:mb-8 text-center">Our Story</h2>
       <p className="max-sm:px-6 text-white font-sans xs:text-lg sm:text-2xl xl:text-3xl 2xl:text-[40px]   text-center">
         A journey for making successful luxury restaurant <span className="sm:block mt-2 md:mt-4"> with the best services</span>
