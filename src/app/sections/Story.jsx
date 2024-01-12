@@ -1,9 +1,6 @@
 "use client";
 import { useRef } from "react";
 import useIsVisible from "@app/Components/useIsVisible";
-
-
-
 import Image from "next/image";
 import story from "public/assets/story.png";
 const Story = () => {

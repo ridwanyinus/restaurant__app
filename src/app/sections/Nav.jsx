@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { navLinks } from "@app/constants/data";
+
 import Image from "next/image";
 import logo from "public/assets/logo.svg";
 import { AiOutlineAlignLeft } from "react-icons/ai";
