@@ -24,7 +24,7 @@ const Footer = () => {
         </p>
         <p className="flex items-center text-white font-sans font-medium text-lg sm:text-xl tracking-wide underline">
           <span className="mr-1">
-            <Image src={call} alt="location" className="w-[25px] xs:w-[30px] " />
+            <Image src={call} alt="call" className="w-[25px] xs:w-[30px] " />
           </span>
           +(234)8166319747
         </p>

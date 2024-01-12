@@ -32,9 +32,9 @@ const SpecialMenu = () => {
               <p className="text-white text-[15px] font-sans w-[80%] xs:w-[88%] sm:w-[85%] lg:w-[90%] ">{items.label}</p>
 
               <div className="inline-flex justify-start items-start mt-5  space-x-2">
-                {items.rating.map((rates) => (
-                  <a href="#" className="inline-flex ">
-                    <Image src={rates.star} className="w-[20px] lg:w-[25px] widescreen:w-[30px]" />
+                {items.rating.map((rates, index) => (
+                  <a href="#" className="inline-flex" key={index}>
+                    <Image src={rates.imgurl} alt="star" className="w-[20px] lg:w-[25px] widescreen:w-[30px]" />
                   </a>
                 ))}
               </div>
@@ -47,7 +47,6 @@ const SpecialMenu = () => {
           ))}
         </div>
       </section>
-      
     </main>
   );
 };

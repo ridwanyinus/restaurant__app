@@ -11,7 +11,7 @@ const Nav = () => {
   return (
     <nav className="max-lg:fixed *:text-white *:font-inter z-50 flex relative justify-end  bg-grey max-lg:h-[65px] py-5 lg:px-16 items-center w-full">
       <div className="absolute left-[20px] lg:left-10 top-0 max-sm:top-2 z-10">
-        <Image src={logo} alt="logo" className="w-[60px] sm:w-[70px] xl:w-[95px] lg:w-[80px] cursor-pointer" />
+        <Image src={logo} alt="logo" priority className="w-[60px] sm:w-[70px] xl:w-[95px] lg:w-[80px] cursor-pointer" />
       </div>
 
       <div className="flex gap-x-12 items-center mx-auto max-lg:hidden">

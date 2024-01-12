@@ -16,7 +16,7 @@ const Story = () => {
 
       <main className="flex max-sm:flex-col-reverse px-4 sm:space-x-8 lg:space-x-0 md:px-8 lg:px-12 xl:px-32 py-12 md:py-24">
         <div className="flex-1 flex max-lg:justify-center items-center">
-          <Image src={story} placeholder="blur" quality={100} className="max-sm:w-[90vw] max-sm:h-[50vw] md:w-[400px] lg:w-[585px] md:h-[280px] lg:h-[400px] object-cover story" />
+          <Image src={story} placeholder="blur" quality={100} alt="story" className="max-sm:w-[90vw] max-sm:h-[50vw] md:w-[400px] lg:w-[585px] md:h-[280px] lg:h-[400px] object-cover story" />
         </div>
 
         <div className="flex-1 flex flex-col justify-end items-end max-sm:mb-12">
