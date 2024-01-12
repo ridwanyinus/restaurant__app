@@ -28,17 +28,17 @@ const Dining = () => {
         <div className="xs:flex justify-end w-full max-sm:pl-3 pt-6">
           <div className="*:text-white xs:space-y-5 max-xs:mb-8">
             <p className="font-display text-2xl xs:text-4xl sm:text-[40px] md:text-5xl xl:text-6xl 2xl:text-[65px]">Fine Dining</p>
-            <p className="text-xs xs:text-base lg:text-lg xl:text-xl 2xl:text-[28px] leading-normal font-sans xs:w-[85%] sm:w-[70%]">Bottle of Champagne Fine Sushi Tower For 2+ Dessert</p>
+            <p className="text-xs xs:text-base lg:text-lg xl:text-xl 2xl:text-[28px] leading-normal font-sans  xs:w-[85%] sm:w-[70%]">Bottle of Champagne Fine Sushi Tower For 2+ Dessert</p>
           </div>
 
-          <div className="relative left-0 flex justify-end h-[110px] xs:h-[120px] sm:h-[150px] md:h-[200px] lg:h-[250px] linear">
+          <div className="relative left-0 flex justify-end h-[120px] sm:h-[150px] md:h-[200px] lg:h-[250px] linear">
             <Image src={dining1} alt="dining" quality={100} className="w-[100%] xs:w-[75%] sm:w-[80%] object-cover" />
             <p className="text-yellow font-display absolute bottom-0 left-[5%] z-10 text-2xl xs:text-3xl sm:text-4xl   md:text-4xl xl:text-6xl 2xl:text-[65px]">$500</p>
           </div>
         </div>
 
         <div className="max-xs:flex-col-reverse   flex w-full pl-3  xs:px-3 lg:px-0 md:space-x-3 lg:space-x-0 items-start pt-6">
-          <div className="relative right-0 flex justify-start h-[110px] xs:h-[120px] sm:h-[150px] md:h-[200px] lg:h-[250px] linear2 ">
+          <div className="relative right-0 flex justify-start h-[120px] sm:h-[150px] md:h-[200px] lg:h-[250px] linear2 ">
             <Image src={dining2} alt="dining" quality={100} className="w-[100%] xs:w-[100%]  object-cover" />
             <p className="text-yellow font-display absolute bottom-0 right-0 xs:-right-[15%] sm:-right-[10%]  md:-right-[5%] z-10 text-2xl xs:text-3xl sm:text-4xl   md:text-4xl xl:text-6xl 2xl:text-[65px]">
               $1000
@@ -58,7 +58,7 @@ const Dining = () => {
             </p>
           </div>
 
-          <div className="relative right-0 flex justify-end h-[110px] xs:h-[120px] sm:h-[150px] md:h-[200px] lg:h-[250px] linear mt-8">
+          <div className="relative right-0 flex justify-end h-[120px] sm:h-[150px] md:h-[200px] lg:h-[250px] linear mt-8">
             <Image src={dining3} alt="dining" quality={100} className="w-[100%] xs:w-[75%] sm:w-[80%] object-cover" />
             <p className="text-yellow font-display absolute bottom-0 left-[5%] z-10 text-2xl xs:text-3xl sm:text-4xl   md:text-4xl xl:text-6xl 2xl:text-[65px]">$500</p>
           </div>
