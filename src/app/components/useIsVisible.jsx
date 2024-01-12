@@ -17,4 +17,4 @@ export function useIsVisible(ref) {
 
   return isIntersecting;
 }
-export default useIsVisible;
+// export default useIsVisible;
