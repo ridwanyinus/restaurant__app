@@ -1,13 +1,28 @@
+"use client";
+import { useIsVisible } from "@app/Components/useIsVisble";
+
 import dining1 from "public/assets/dining1.png";
 import dining2 from "public/assets/dining2.png";
 import dining3 from "public/assets/dining3.png";
 import Image from "next/image";
 
 const Dining = () => {
+  const ref1 = useRef();
+  const isVisible1 = useIsVisible(ref1);
+
+  const ref2 = useRef();
+  const isVisible2 = useIsVisible(ref2);
+
+  const ref3 = useRef();
+  const isVisible3 = useIsVisible(ref3);
   return (
     <section
+      ref={ref1}
       id="dining"
-      className={`pt-12 lg:pt-24 pb-12 `}>
+      className={`pt-12 lg:pt-24 pb-12   transition-opacity
+  ease-in
+  duration-700
+  ${isVisible1 ? "opacity-100" : "opacity-0"}`}>
       <h2 className="text-yellow text-3xl xs:text-4xl sm:text-[40px]  md:text-5xl xl:text-6xl 2xl:text-[65px] font-display leading-normal mb-5  lg:mb-12 text-center">Dining Events</h2>
       <p className="max-sm:px-6 text-white font-sans xs:text-lg sm:text-2xl md:text-3xl xl:text-[40px]  2xl:text-[45px] text-center">
         We provide dining event for your special day <span className="sm:block mt-2 md:mt-4"> with your important people</span>
