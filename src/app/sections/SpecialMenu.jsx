@@ -1,6 +1,7 @@
 "use client";
 import { useRef } from "react";
-import { useIsVisible } from "@app/Components/useIsVisible";
+import { useIsVisible } from "../Components/useIsVisible";
+// import { useIsVisible } from "@app/Components/useIsVisible";
 
 import { specialData } from "@app/constants/data";
 import arrow1 from "public/assets/arrow1.png";
