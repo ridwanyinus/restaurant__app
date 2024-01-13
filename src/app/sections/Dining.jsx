@@ -1,7 +1,8 @@
 "use client";
 import { useRef } from "react";
-// import { useIsVisible } from "@app/Components/useIsVisible";
 import { useIsVisible } from "../Components/useIsVisible";
+// import { useIsVisible } from "@app/Components/useIsVisible";
+
 
 import dining1 from "public/assets/dining1.png";
 import dining2 from "public/assets/dining2.png";

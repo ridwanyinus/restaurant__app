@@ -3,6 +3,7 @@ import { useRef } from "react";
 // import { useIsVisible } from "@app/Components/useIsVisible";
 import { useIsVisible } from "../Components/useIsVisible";
 
+
 import location from "public/assets/location.svg";
 import call from "public/assets/call.svg";
 import Image from "next/image";

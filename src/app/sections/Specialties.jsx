@@ -1,8 +1,8 @@
 "use client";
 import { useRef } from "react";
 import { useIsVisible } from "../Components/useIsVisible";
-// import { useIsVisible } from "@app/Components/useIsVisible";
 
+// import { useIsVisible } from "@app/Components/useIsVisible";
 import { specialties } from "@app/constants/data";
 import Image from "next/image";
 import specialties1 from "public/assets/specialties1.png";
