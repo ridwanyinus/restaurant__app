@@ -2,6 +2,7 @@
 import { useRef } from "react";
 import { useIsVisible } from "@app/Components/useIsVisible";
 
+
 const Hero = () => {
   const ref1 = useRef();
   const isVisible1 = useIsVisible(ref1);
