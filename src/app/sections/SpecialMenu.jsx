@@ -1,12 +1,21 @@
-
+"use client";
+import { useIsVisible } from "@app/Components/useIsVisble";
+import { useRef } from "react";
 import { specialData } from "@app/constants/data";
 import arrow1 from "public/assets/arrow1.png";
 import arrow2 from "public/assets/Vector.png";
 import Image from "next/image";
 const SpecialMenu = () => {
- 
+  const ref3 = useRef();
+  const isVisible3 = useIsVisible(ref3);
   return (
-    <main id="specialMenu"  className={`pt-24  relative w-full h-full mx-auto `}>
+    <main
+      ref={ref3}
+      id="specialMenu"
+      className={`pt-24  relative w-full h-full mx-auto transition-opacity
+  ease-in
+  duration-700
+  ${isVisible3 ? "opacity-100" : "opacity-0"}`}>
       <Image src={arrow1} alt="arrow1" color="#fff" width={300} className="absolute max-lg:hidden left-10 lg:top-16 xl:top-28 object-cover" />
       <Image src={arrow2} alt="arrow1" color="#fff" width={300} className="absolute  max-xl:hidden  lg:-top-1 xl:top-10 lg:-right-3 xl:right-7 object-cover" />
 

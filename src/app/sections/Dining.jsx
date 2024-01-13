@@ -10,17 +10,11 @@ import Image from "next/image";
 const Dining = () => {
   const ref1 = useRef();
   const isVisible1 = useIsVisible(ref1);
-
-  // const ref2 = useRef();
-  // const isVisible2 = useIsVisible(ref2);
-
-  // const ref3 = useRef();
-  // const isVisible3 = useIsVisible(ref3);
   return (
     <section
       ref={ref1}
       id="dining"
-      className={`pt-12 lg:pt-24 pb-12   transition-opacity
+      className={`pt-12 lg:pt-24 pb-12 transition-opacity
   ease-in
   duration-700
   ${isVisible1 ? "opacity-100" : "opacity-0"}`}>
