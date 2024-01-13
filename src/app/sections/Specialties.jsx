@@ -1,8 +1,4 @@
-"use client";
-import { useRef } from "react";
-import { useIsVisible } from "../Components/useIsVisible";
 
-// import { useIsVisible } from "@app/Components/useIsVisible";
 import { specialties } from "@app/constants/data";
 import Image from "next/image";
 import specialties1 from "public/assets/specialties1.png";
@@ -12,10 +8,9 @@ import specialtiesbg from "public/assets/specialtiesbg.png";
 import specialbg from "public/assets/specialbg.png";
 
 const Specialties = () => {
-  const ref3 = useRef();
-  const isVisible3 = useIsVisible(ref3);
+
   return (
-    <main ref={ref3} className={`pt-24 transition-opacity ease-in duration-700 ${isVisible3 ? "opacity-100" : "opacity-0"} `}>
+    <main  className={`pt-24 transition-opacity ease-in duration-700 `}>
       <div className="mb-24 w-full">
         <Image src={specialbg} alt="specialbg" priority className="object-cover max-xs:h-[120px]" />
       </div>

@@ -1,21 +1,11 @@
-"use client";
-import { useRef } from "react";
-import { useIsVisible } from "../Components/useIsVisible";
-
-// import { useIsVisible } from "@app/Components/useIsVisible";
-
 
 const Hero = () => {
-  const ref1 = useRef();
-  const isVisible1 = useIsVisible(ref1);
+
   
   return (
     <main
       id="hero"
-      ref={ref1}
-      className={`bg-[url(/assets/herobg.png)] w-full bg-no-repeat bg-center bg-cover relative h-[90vh] xs:h-full pt-44 pb-16 xs:py-28 transition-opacity ease-in duration-700 ${
-        isVisible1 ? "opacity-100" : "opacity-0"
-      }`}>
+      className={`bg-[url(/assets/herobg.png)] w-full bg-no-repeat bg-center bg-cover relative h-[90vh] xs:h-full pt-44 pb-16 xs:py-28 `}>
       <div className="relative z-10 flex flex-col justify-center items-center">
         <h2 className="taste text-yellow font-display text-center leading-none text-3xl xs:text-4xl sm:text-[40px] md:text-5xl xl:text-6xl  widescreen:text-[65px] pb-12 lg:pb-12 w-full ">
           Taste the rich flavour of <span className="max-lg:block mt-2 xs:mt-1 sm:mt-2 "> high quality meals</span>

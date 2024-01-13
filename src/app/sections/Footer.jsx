@@ -1,20 +1,9 @@
-"use client";
-import { useRef } from "react";
-// import { useIsVisible } from "@app/Components/useIsVisible";
-import { useIsVisible } from "../Components/useIsVisible";
-
-
 import location from "public/assets/location.svg";
 import call from "public/assets/call.svg";
 import Image from "next/image";
 const Footer = () => {
-  const ref6 = useRef();
-  const isVisible6 = useIsVisible(ref6);
   return (
-    <footer
-      id="footer"
-      ref={ref6}
-      className={`bg-[url(/assets/footer.png)] w-auto h-full pt-12 sm:pt-28 pb-24 relative object-cover bg-cover transition-opacity ease-in duration-700 ${isVisible6 ? "opacity-100" : "opacity-0"}`}>
+    <footer id="footer" className={`bg-[url(/assets/footer.png)] w-auto h-full pt-12 sm:pt-28 pb-24 relative object-cover bg-cover `}>
       <h2 className="text-white text-[22px] xs:text-3xl sm:text-4xl md:text-[40px]  lg:text-5xl font-display leading-normal mb-5  lg:mb-8 text-center z-10 relative ">
         We are always ready to surprise <span className="block sm:mt-2">you with new flavours</span>
       </h2>
